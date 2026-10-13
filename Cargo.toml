@@ -1,0 +1,26 @@
+[package]
+name = "codex-context-manager"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+description = "A local desktop switch for Codex context window presets"
+license = "MIT"
+
+[features]
+qa-screenshot = ["eframe/__screenshot"]
+
+[dependencies]
+eframe = { version = "=0.36.1", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+rfd = "0.15.4"
+serde_json = "1.0"
+tempfile = "3.27"
+toml_edit = "0.25.15"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_Storage_FileSystem", "Win32_System_Console"] }
+
+[profile.release]
+opt-level = "s"
+strip = true
+lto = "thin"
+codegen-units = 1

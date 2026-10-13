@@ -1,0 +1,35 @@
+/target/
+/dist/
+/.qa/
+
+# Generated binaries, archives, logs and editor state.
+*.exe
+*.dll
+*.pdb
+*.zip
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local Codex data, secrets and automatic backups.
+.codex/
+config.toml
+*.config.toml
+auth.json
+models_cache.json
+context-manager-backups/
+*.bak
+*.backup*
+*.sqlite*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Keep Cargo.lock: this is an application and builds must be reproducible.
