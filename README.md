@@ -2,6 +2,8 @@
 
 用 Rust 编写的 Windows 桌面小工具。双击 `dist/Codex上下文管理.exe`，在 360×190 的黑白小窗口中选择档位并应用。界面仅显示当前值、三个档位、应用按钮和操作状态。切换后重启 Codex 并新开对话加载配置。
 
+Windows x64 免安装版：[下载 EXE](https://github.com/Annnayaya/codex-context-manager/releases/download/v0.1.0/codex-context-manager-v0.1.0-windows-x64.exe) · [下载 ZIP](https://github.com/Annnayaya/codex-context-manager/releases/download/v0.1.0/codex-context-manager-v0.1.0-windows-x64.zip) · [版本说明](https://github.com/Annnayaya/codex-context-manager/releases/tag/v0.1.0)。下载 EXE 后双击运行，无需安装 Rust。
+
 | 档位 | 上下文总窗口 | 自动压缩阈值 | Codex 预留 5% 时的可用额度 |
 | --- | ---: | ---: | ---: |
 | 初始默认 | 272,000 | 244,800 | 约 258K |
